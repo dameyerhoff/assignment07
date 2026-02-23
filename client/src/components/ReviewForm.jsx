@@ -10,7 +10,7 @@ export default function ReviewForm() {
   async function handleSubmit(e) {
     e.preventDefault();
     // 1. create our review -> need to do this first
-    const reviewRes = await fetch(`http://localhost:8080/reviews`, {
+    const reviewRes = await fetch(`https://assignment07.onrender.com/reviews`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -23,7 +23,7 @@ export default function ReviewForm() {
 
     // 2. need to update the animals_habitats side
 
-    await fetch(`http://localhost:8080/reviews/${newReview[0].id}}`, {
+    await fetch(`https://assignment07.onrender.com/${newReview[0].id}}`, {
       // the actual content of the request is in the URL params - so we dont have a body. The end result is still making a new resource, so this should still be a post route
       method: "POST",
     });
