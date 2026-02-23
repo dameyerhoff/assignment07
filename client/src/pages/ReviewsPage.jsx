@@ -18,7 +18,9 @@ export default function ReviewsPage() {
 
   useEffect(() => {
     async function fetchData() {
-      const res = await fetch(`http://localhost:8080/reviews/${id}`);
+      const res = await fetch(
+        `https://assignment07.onrender.com/reviews/${id}`,
+      );
       const data = await res.json();
       console.log(data);
 

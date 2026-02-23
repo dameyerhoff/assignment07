@@ -2,7 +2,7 @@ import { Link } from "react-router";
 export default function ReviewCard({ name, review, score }) {
   console.log(review, name, score);
   return (
-    <Link to={`/reviews/${review}`}>
+    <Link to={`https://assignment07.onrender.com/reviews/${review}`}>
       <div class="relative grid h-auto w-full max-w-md flex-col items-end justify-center overflow-hidden rounded-xl bg-white bg-clip-border text-center text-gray-700">
         <div
           class={`absolute inset-0 m-0 h-full w-full overflow-hidden bg-transparent bg-[url('${review}')] bg-cover bg-clip-border bg-center text-red-700 shadow-none`}
