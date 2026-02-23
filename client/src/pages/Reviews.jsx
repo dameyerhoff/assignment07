@@ -8,7 +8,7 @@ export default function Reviews() {
   useEffect(() => {
     async function fetchData() {
       // fetch() makes a GET request by default
-      const res = await fetch(`http://localhost:8080/reviews`);
+      const res = await fetch(`https://assignment07.onrender.com/reviews`);
       const data = await res.json();
       setReviews(data);
     }
