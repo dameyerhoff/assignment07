@@ -23,10 +23,13 @@ export default function ReviewForm() {
 
     // 2. need to update the animals_habitats side
 
-    await fetch(`https://assignment07.onrender.com/${newReview[0].id}}`, {
-      // the actual content of the request is in the URL params - so we dont have a body. The end result is still making a new resource, so this should still be a post route
-      method: "POST",
-    });
+    await fetch(
+      `https://assignment07.onrender.com/reviews/${newReview[0].id}}`,
+      {
+        // the actual content of the request is in the URL params - so we dont have a body. The end result is still making a new resource, so this should still be a post route
+        method: "POST",
+      },
+    );
   }
 
   return (
